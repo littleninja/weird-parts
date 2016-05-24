@@ -1,0 +1,9 @@
+# Local project
+.DS_Store
+.idea/
+
+# Project output
+dist/
+
+# Dependency
+node_modules/
