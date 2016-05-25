@@ -1,27 +1,12 @@
-console.log(this); // window
+var y = y$('bloop', 'en');
 
-(function () {
-    console.log(this); // window
-})();
+var $lang = $('#language');
+var $word = $('#word');
 
-var obj = {
-    log: function() {
-        console.log(this); // obj
-    },
-    logVar: function() {
-        var fxn = function() {
-            console.log(this); // window ??? (considered a bug)
-        };
-        fxn();
-    },
-    logFxn: function() {
-        function fxn() {
-            console.log(this); // window ??? (considered a bug)
-        }
-        fxn();
-    }
-};
+$('#say').click(function() {
 
-obj.log();
-obj.logVar();
-obj.logFxn();
+    var yipper = y$($word.val(), $lang.val());
+
+    yipper.HTMLExclaim('#exclamation');
+
+});

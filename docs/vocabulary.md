@@ -72,3 +72,13 @@ Keyword for parameters passed to function.
 
 *Function Currying*
 Binding one or more values to a function's parameters.
+
+*Inheritance*
+One object has access to the properties and methods of another.
+
+*Syntactic sugar*
+Different way of typing something that performs the same action.
+
+*Method chaining*
+*Fluent API*
+Calling one method after another and all calls affect the parent object.
